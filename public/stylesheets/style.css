@@ -19,3 +19,15 @@ a {
 .active {
   margin-left: 10px;
 }
+
+.red {
+  color: red;
+}
+
+td a {
+  color: white;
+}
+
+td a:hover {
+  text-decoration: underline;
+}
