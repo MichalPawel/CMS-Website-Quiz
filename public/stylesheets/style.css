@@ -5,6 +5,12 @@ body {
   color: lightblue;
 }
 
+.wrap {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+
 ul {
   padding-inline-start: 10px;
   list-style: none;
@@ -30,4 +36,27 @@ td a {
 
 td a:hover {
   text-decoration: underline;
+}
+
+.news-header {
+  margin-bottom: 40px;
+}
+
+.article-created {
+  font-size: 11px;
+}
+
+article {
+  padding-bottom: 5px;
+  border-bottom: 1px solid lightblue;
+}
+
+@media only screen and (min-width: 768px) {
+  .wrap {
+    display: flex;
+  }
+
+  nav {
+    margin-right: calc(20px + 2vw);
+  }
 }

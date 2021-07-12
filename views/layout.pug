@@ -11,13 +11,14 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    nav
-      ul 
-        +item('Home', '/')
-        +item('News', '/news')
-        +item('Quiz', '/quiz')
-        +item('Admin', '/admin')
+    div(class='wrap')
+      nav
+        ul 
+          +item('Home', '/')
+          +item('News', '/news')
+          +item('Quiz', '/quiz')
+          +item('Admin', '/admin')
         
 
-
-    block content
+      div(class="main")
+        block content

@@ -1,5 +1,13 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1(class='news-header')= title
+  form(method='get')
+    input(type='text' value=search name='search')
+    input(type='submit' value='Search')
+  
+  each item in data 
+    article 
+      h1(class='article-header')=item.title 
+      p(class="article-created")=item.created 
+      p(class="article-description")=item.description
